@@ -3,7 +3,7 @@
   'use strict';
   if (!cfg || !Array.isArray(cfg.hosts) || cfg.hosts.indexOf(location.hostname) === -1 ||
       (cfg.cookiePath && location.pathname.indexOf(cfg.cookiePath) !== 0)) return;
-  if (window.__siteAnalyticsConsent || !/^G-[A-Z0-9]+$/.test(cfg.id) || cfg.id === 'G-TF44H6B4VN') return;
+  if (window.__siteAnalyticsConsent || !/^G-[A-Z0-9]+$/.test(cfg.id) || cfg.id === 'G-PENDING') return;
   window.__siteAnalyticsConsent = true;
   var id = cfg.id, key = 'site-ga-consent-v1:' + id;
   var prefix = 'site' + id.replace(/[^A-Z0-9]/g, ''), cookiePath = cfg.cookiePath || '/';
